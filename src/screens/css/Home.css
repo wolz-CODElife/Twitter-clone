@@ -1,0 +1,22 @@
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.layout_main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 1280px) {
+    .layout_main {
+        grid-template-columns: 2fr 8fr;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .layout {
+        grid-template-columns: none;
+    }
+    .layout_extra {
+        display: none;
+    }
+}

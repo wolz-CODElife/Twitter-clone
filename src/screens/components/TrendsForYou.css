@@ -1,0 +1,36 @@
+.trendsforyou {
+    background-color: #f5f4f4;
+    margin: 5px 0px;
+    border-radius: 15px;
+}
+.trendsforyou_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 10px 15px;
+}
+.trendsforyou_header > h3 {
+    margin: 0px;
+}
+.trendsforyou_header > .MuiSvgIcon-root {
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.trendsforyou_header > .MuiSvgIcon-root:hover {
+    background-color: #dadada;
+}
+.trendsforyou_footer{
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+}
+.trendsforyou_footer:hover {
+    background-color: #dadada;
+}
+.trendsforyou_footer > a {
+    text-decoration: none;
+    color: #1da1f2;
+    font-weight: 500;
+}

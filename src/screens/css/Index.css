@@ -1,12 +1,49 @@
 .index {
-
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+.index_form { 
+    width: 80%;
+    max-width: 350px;
+    height: 80vh;
 }
 .index_form > .MuiSvgIcon-root {
     color: #1da1f2;
+    font-size: 2.8rem !important;
 }
-.index_form > button {
+.index_form_input{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    padding: 18px 8px;
+    font-size: 1.1rem;
+    border: 0.5px solid #b4bcc0;
+}
+.index_form_button {
     background-color: #1da1f2;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 30px;
+    padding: 15px 5px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
 }
-.index_form > a {
+.index_form_button:disabled{
+    opacity: 0.4;
+    cursor: default;
+}
+.index_form > p{
+    text-align: center;
+    margin-top: 30px;
+}
+.index_form_link {
     color: #1da1f2;
+    text-decoration: none;
 }

@@ -1,0 +1,14 @@
+.trends {
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.trends_body {
+    flex: 1;
+    max-height: 85vh;
+    margin: 10px 0px;
+    overflow-y: auto;
+}
+.trends_body::-webkit-scrollbar{
+    display: none;
+}

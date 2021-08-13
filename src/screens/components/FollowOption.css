@@ -1,0 +1,49 @@
+.followOption{
+    display: flex;
+    padding: 10px 15px;
+    cursor: pointer;
+    position: relative;
+}
+.followOption:hover {
+    background-color: #dadada;
+}
+.followOption_image{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.followOption_info {
+    margin: 0px 10px;
+}
+.followOption_info > p {
+    margin: 0px;
+    color: gray;
+    font-size: 1rem;
+}
+.follow_tag {
+    background-color: #dadada;
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+.followOption_info > h3 {
+    margin: 0px;
+    color: #0f1419;
+    font-size: 1rem;
+}
+.followOption_button {
+    border-radius: 30px;
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #0f1419;
+    color: white;
+    border: none;
+    height: fit-content;
+    position: absolute;
+    right: 20px;
+}
+
+.followOption_button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,39 @@
+.menu_option {
+    margin: 0px;
+    margin-right: 20px;
+    padding: 0px;
+    width: fit-content; 
+}
+.menu {
+    display: flex;
+    align-items: center;
+    color: #0f1419;
+    text-decoration: none;
+    padding: 8px 10px;
+    padding-right: 30px;
+    border-radius: 30px;
+}
+.menu:hover {
+    background-color: #e4e1e1;
+}
+.menu_title {
+    font-size: 1.2rem;
+}
+.menu_icon {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+    .menu_title {
+        display: none;
+    }
+    .menu{
+        padding-right: 10px;
+    }
+    .menu_icon {
+        margin-right: 0px;
+    }
+    .more {
+        display: none !important;
+    }
+}

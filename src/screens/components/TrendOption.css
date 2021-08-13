@@ -1,0 +1,28 @@
+.trendOption{
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.trendOption:hover {
+    background-color: #dadada;
+}
+.trendOption_info > p {
+    margin: 0px;
+    color: gray;
+    font-size: 0.9rem;
+}
+.trendOption_info > h3 {
+    margin: 0px;
+    color: #0f1419;
+    font-size: 0.9rem;
+}
+.trendOption > .MuiSvgIcon-root {
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.trendOption > .MuiSvgIcon-root:hover {
+    background-color: #97cff1b0;
+}

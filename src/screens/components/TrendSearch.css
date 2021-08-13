@@ -1,0 +1,33 @@
+.trends_search {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    background-color: #eeeded;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+.trends_search > .MuiSvgIcon-root {
+    margin-right: 10px;
+    color: gray;
+}
+.trends_search_input {
+    flex: 1;
+    color: gray;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 1rem;
+}
+.trends_search_input:focus {
+    border: none;
+    outline: none;
+}
+.trends_search:hover {
+    background-color: white;
+    border: 0.5px solid #1da1f2;
+    color: #1da1f2;
+}
+.trends_search:hover .MuiSvgIcon-root {
+    color: #1da1f2;
+}
