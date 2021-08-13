@@ -11,11 +11,6 @@ const TrendsForYou = () => {
             tweetCounts: '26.9K'
         },
         {
-            category: 'Trending in France',
-            title: 'Trending in France',
-            tweetCounts: '15.8K'
-        },
-        {
             category: 'Politics · Trending',
             title: 'Trump',
             tweetCounts: '578K'

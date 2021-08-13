@@ -12,3 +12,9 @@
 .trends_body::-webkit-scrollbar{
     display: none;
 }
+.trends_links > a {
+    margin-right: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: gray;
+}
