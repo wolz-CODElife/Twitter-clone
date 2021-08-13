@@ -1,4 +1,21 @@
 .postlists {
     border-left: 0.5px solid #e7edf0;
     border-right: 0.5px solid #e7edf0;
+    margin: 0px;
+}
+.postlists_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 15px;
+    border-bottom: 0.5px solid #e7edf0;
+    text-transform: capitalize;
+}
+.postlists_body {
+    height: 85vh;
+    overflow-y: scroll;
+}
+.postlists_body::-webkit-scrollbar {
+    display: none;
 }

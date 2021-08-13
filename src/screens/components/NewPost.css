@@ -1,0 +1,105 @@
+.newpost {
+    position: relative;
+    display: flex;
+    padding: 10px 20px;
+    border-bottom: 0.5px solid #e7edf0;
+}
+.newpost_image {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.newpost_image:hover {
+    filter: brightness(0.7);
+}
+.newpost_form {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.newpost_form > textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+.newpost_form > textarea::-webkit-resizer {
+    display: none;
+}
+.newpost_form > textarea::-webkit-scrollbar {
+    display: none;
+}
+.newpost_form > button {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #1da1f2;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+.newpost_form > button:hover {
+    background-color: #1da0f21c;
+}
+.newpost_form > button > .MuiSvgIcon-root {
+    font-size: 1.1rem !important;
+    margin-right: 5px;
+    margin-left: 0px;
+    color: #1da1f2;
+}
+.newpost_options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 0.5px solid #e7edf0;
+    margin-top: 10px;
+    padding: 15px 0px;
+    padding-bottom: 5px;
+}
+.newpost_options_list > .MuiSvgIcon-root {
+    color: #1da0f2cb;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.newpost_options_list > .MuiSvgIcon-root:hover {
+    background-color: #1da0f21c;
+}
+.newpost_option_button {
+    border-radius: 30px;
+    background-color: #1da1f2;
+    opacity: 0.85;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.newpost_option_button:hover {
+    opacity: 1;
+}
+.newpost_option_button:disabled {
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+    .newpost_image {
+        display: none;
+    }
+    .newpost_form {
+        margin-left: 0px;
+    }
+}
