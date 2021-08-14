@@ -25,7 +25,7 @@ const Post = () => {
                             #5. "Essence (Remix) -- (NEW) @wizkidayo feat @justinbieber & @temsbaby"
                         </div>
                         <div className="post_item_body_link">
-                            <img src="" alt="" />
+                            <img src="https://pbs.twimg.com/profile_images/1330972427711619075/sARDqsaa_normal.jpg" alt="Link Image" />
                             <div>
                                 <p>New Music Friday</p>
                                 <p>Spotify . Playlist . 100 songs . 3.8M likes</p>
