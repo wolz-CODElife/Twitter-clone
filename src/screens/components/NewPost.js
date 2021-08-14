@@ -17,11 +17,11 @@ const NewPost = () => {
                 <button><PublicIcon /> Everbody can reply</button>
                 <div className="newpost_options">
                     <div className="newpost_options_list">
-                        <ImageOutlinedIcon />
-                        <GifOutlinedIcon />
-                        <EqualizerIcon style={{transform: 'rotate(90deg)'}} />
-                        <SentimentSatisfiedOutlinedIcon />
-                        <EventOutlinedIcon />
+                        <ImageOutlinedIcon title="Media" />
+                        <GifOutlinedIcon title="GIF" />
+                        <EqualizerIcon style={{transform: 'rotate(90deg)'}} title="Poll" />
+                        <SentimentSatisfiedOutlinedIcon title="Emoji" />
+                        <EventOutlinedIcon title="Schedule" />
                     </div>
                     <button className="newpost_option_button" disabled={tweet==='' ? 'disabled' : false}>Tweet</button>
                 </div>

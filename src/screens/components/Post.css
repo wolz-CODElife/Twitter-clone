@@ -2,4 +2,63 @@
     position: relative;
     margin: 0px;
     padding: 10px 20px;
+    border-bottom: 0.5px solid #e7edf0;
+}
+.retweet_tag {
+    margin: 0px 30px;
+    color: gray;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.post_item {
+    display: flex;
+}
+.post_item_user_image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.post_item_user_image:hover {
+    filter: brightness(0.8);
+}
+.post_item_content {
+    margin: 0px;
+    margin-left: 10px;
+    flex: 1;
+}
+.post_item_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+.post_item_header_info {
+    display: flex;
+}
+.post_item_header_info > h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.post_item_header_info > p {
+    color: gray;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.post_item_header_more > .MuiSvgIcon-root {
+    border-radius: 30px;
+    padding: 8px;
+    cursor: pointer;
+}
+.post_item_header_more > .MuiSvgIcon-root:hover {
+    background-color: #eeeded;
+}
+.post_item_body {
+    margin: 0px;
+}
+.post_item_body_text {
+    margin: 0px;
+    white-space: pre-wrap;
 }
