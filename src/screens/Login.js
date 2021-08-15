@@ -57,14 +57,14 @@ const Login = ({useHistory}) => {
                 <TwitterIcon fontSize="large" />
                 <h1>Log in to Twitter</h1>
                 <form onSubmit={e => onLogin(e)}>
-                    <input type="text" placeholder="Telephone number, email or username" className="index_form_input" value={email} onChange={(e) => setEmail(e.target.value) } />
+                    <input type="text" placeholder="Email" className="index_form_input" value={email} onChange={(e) => setEmail(e.target.value) } />
                     
                     <input type="password" placeholder="Password" className="index_form_input" value={password} onChange={(e) => setPassword(e.target.value) } />
                     
                     <button type="submit" className="index_form_button" disabled={email==='' || password===''?'disabled': false}>Login</button>
                 </form>
                 <p>or</p>
-                <button type="button" className="index_form_button" onClick={() => googleSignin()}>Signup with Google</button>
+                <button type="button" className="index_form_google_button" onClick={() => googleSignin()}><img src="https://i.postimg.cc/W4dKZSH5/image.png" alt="" /> </button>
                 <p>                    
                     <a href="/" disabled="disabled" className="index_form_link">forgotten password?</a>
                 </p>

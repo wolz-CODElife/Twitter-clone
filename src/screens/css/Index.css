@@ -36,6 +36,27 @@
     cursor: pointer;
     opacity: 1;
 }
+.index_form_google_button {
+    background-color: #468bf3;
+    width: 100%;
+    max-width: 350px;
+    border-radius: 30px;
+    padding: 0px;
+    padding-top: 3px;
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    transition: ease 0.2s;
+}
+.index_form_google_button > img {
+    max-height: 50px;
+    object-fit: contain;
+    border-radius: 3px;
+}
+.index_form_google_button:hover {
+    opacity: 0.8;
+}
 .index_form_button:disabled{
     opacity: 0.4;
     cursor: default;
