@@ -26,7 +26,7 @@ const Sidebar = () => {
             <MenuOption Icon={MoreOutlinedIcon} title="More" />
             <button type="button" className="sidebar_tweet_button"><PostAddIcon fontSize="large" className="tweet_icon" /><span className="menu_title">Tweet</span></button>
             <div className="sidebar_profile">
-                <img src="https://pbs.twimg.com/profile_images/1330972427711619075/sARDqsaa_normal.jpg" className="sidebar_profile_image" />
+                <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" className="sidebar_profile_image" />
                 <div className="sidebar_profile_info">
                     <h3>wolz-CODElife</h3>
                     <p>@wolz-CODElife</p>

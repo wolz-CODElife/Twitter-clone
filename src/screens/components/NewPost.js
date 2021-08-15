@@ -11,7 +11,7 @@ const NewPost = () => {
     const [tweet, setTweet] = useState('')
     return (
         <div className="newpost">
-            <img src="https://pbs.twimg.com/profile_images/1330972427711619075/sARDqsaa_normal.jpg" className="newpost_image" />
+            <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" className="newpost_image" />
             <form className="newpost_form">
                 <textarea placeholder="What's happening?" onChange={(e) => setTweet(e.target.value)}></textarea>
                 <button><PublicIcon /> Everbody can reply</button>
