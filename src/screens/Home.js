@@ -12,8 +12,8 @@ const Home = () => {
     useEffect(() => {
         if (!localStorage.getItem('user')) {
             history.push('/')
+            dispatch({type: 'SET_USER', user: JSON.parse(localStorage.getItem('user'))})
         }
-        dispatch({type: 'SET_USER', user: JSON.parse(localStorage.getItem('user'))})
     }, [user, history])
 
     return (

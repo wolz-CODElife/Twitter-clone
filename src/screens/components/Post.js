@@ -11,7 +11,7 @@ const Post = () => {
         <div className="post">
             <p className="retweet_tag"><RepeatOutlinedIcon style={{ transform: 'rotate(90deg)' }} /> MrKind Retweeted</p>
             <div className="post_item">
-                <img src="https://i.postimg.cc/fyzbWCnC/image.png" className="post_item_user_image" />
+                <img src="https://i.postimg.cc/fyzbWCnC/image.png" alt="Justin Bieber Charts" className="post_item_user_image" />
                 <div className="post_item_content">
                     <div className="post_item_header">
                         <div className="post_item_header_info">
@@ -29,7 +29,7 @@ const Post = () => {
                             #5. "Essence (Remix) -- (NEW) @wizkidayo feat @justinbieber & @temsbaby"
                         </div>
                         <div className="post_item_body_link">
-                            <img src="https://i.postimg.cc/jSZ4Rgpg/essence-remix.jpg" alt="Link Image" />
+                            <img src="https://i.postimg.cc/jSZ4Rgpg/essence-remix.jpg" alt="Link" />
                             <div>
                                 <p>New Music Friday</p>
                                 <p>Spotify . Playlist . 100 songs . 3.8M likes</p>

@@ -75,3 +75,9 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .sidebar_tweet_button > .MuiSvgIcon-root{
+        font-size: 1.7rem;
+    }
+}

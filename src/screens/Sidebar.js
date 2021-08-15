@@ -9,10 +9,16 @@ import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
 import SubjectIcon from '@material-ui/icons/Subject';
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
-import MoreOutlinedIcon from '@material-ui/icons/MoreOutlined';
+import ExitToAppRoundedIcon from '@material-ui/icons/ExitToAppRounded';
 import PostAddIcon from '@material-ui/icons/PostAdd';
+import useStateValue from '../StateProvider';
 
 const Sidebar = () => {
+    const [{user}, dispatch] = useStateValue()
+    const logout = () => {
+        localStorage.clear()
+        if (user) dispatch({ type: 'SET_USER', user: null })
+    }
     return (
         <div className="sidebar">
             <TwitterIcon fontSize="large" className="" />
@@ -23,10 +29,10 @@ const Sidebar = () => {
             <MenuOption Icon={BookmarkBorderIcon} title="Bookmarks" more link="bookmarks" />
             <MenuOption Icon={SubjectIcon} title="Lists" more link="lists" />
             <MenuOption Icon={PersonOutlineIcon} title="Profile" link="profile" />
-            <MenuOption Icon={MoreOutlinedIcon} title="More" />
+            <MenuOption Icon={ExitToAppRoundedIcon} title="Logout" logout={logout} />
             <button type="button" className="sidebar_tweet_button"><PostAddIcon fontSize="large" className="tweet_icon" /><span className="menu_title">Tweet</span></button>
             <div className="sidebar_profile">
-                <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" className="sidebar_profile_image" />
+                <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" alt="wolz-CODElife" className="sidebar_profile_image" />
                 <div className="sidebar_profile_info">
                     <h3>wolz-CODElife</h3>
                     <p>@wolz-CODElife</p>

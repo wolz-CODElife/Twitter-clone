@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './css/Index.css'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import useStateValue from '../StateProvider';
+import db, { auth, provider } from '../firebase';
 
 const Login = ({useHistory}) => {
     const history = useHistory()
@@ -12,10 +13,38 @@ const Login = ({useHistory}) => {
     const onLogin = (e) => {
         e.preventDefault()
         if (email && password) {
-            const newUser = { name: 'Joel', email: email, password: password }
-            localStorage.setItem('user', JSON.stringify(newUser))
-            dispatch({ type: 'SET_USER', user: newUser })
+            db.collection('users').where('email', '==', email).get()
+                .then(users => {
+                    if (users.empty) {
+                        alert('Invalid Credentials, sign up with google')
+                        return
+                    }
+                    else {
+                        users.docs.map(doc => {
+                            localStorage.setItem('user', JSON.stringify(doc.data()))
+                            dispatch({ type: 'SET_USER', user: doc.data() })
+                        })
+                    }
+                }
+            )
         }
+    }
+    const googleSignin = () => {
+        auth.signInWithPopup(provider)
+            .then(result => {
+                const newGoogleUser = {
+                    name: result.user.displayName,
+                    email: result.user.email,
+                    image: result.user.photoURL
+                }
+                db.collection('users').add(newGoogleUser)
+                localStorage.setItem('user', JSON.stringify(newGoogleUser))
+                dispatch({
+                    type: 'SET_USER',
+                    user: newGoogleUser
+                })
+            })
+            .catch(error => console.log(error.message))
     }
     useEffect(() => {
         if (localStorage.getItem('user')) {
@@ -34,8 +63,10 @@ const Login = ({useHistory}) => {
                     
                     <button type="submit" className="index_form_button" disabled={email==='' || password===''?'disabled': false}>Login</button>
                 </form>
+                <p>or</p>
+                <button type="button" className="index_form_button" onClick={() => googleSignin()}>Signup with Google</button>
                 <p>                    
-                    <a href="/" className="index_form_link">forgotten password?</a> . <a href="/" className="index_form_link">Register on Twitter</a>
+                    <a href="/" disabled="disabled" className="index_form_link">forgotten password?</a>
                 </p>
             </div>
         </div>

@@ -18,7 +18,7 @@
     max-width: 350px;
     margin-bottom: 25px;
     border-radius: 5px;
-    padding: 18px 8px;
+    padding: 18px 15px;
     font-size: 1.1rem;
     border: 0.5px solid #b4bcc0;
 }
@@ -31,6 +31,7 @@
     border-radius: 30px;
     padding: 15px 5px;
     font-size: 1.1rem;
+    margin-left: 15px;
     border: none;
     cursor: pointer;
     opacity: 1;
@@ -41,7 +42,10 @@
 }
 .index_form > p{
     text-align: center;
+    color: #1da1f2;
+    font-weight: 500;
     margin-top: 30px;
+    margin-left: 15px;
 }
 .index_form_link {
     color: #1da1f2;

@@ -103,3 +103,11 @@
         margin-left: 0px;
     }
 }
+@media screen and (max-width: 500px) {
+    .newpost_options_list {
+        display: none;
+    }
+    .newpost_options {
+        justify-content: flex-end;
+    }
+}

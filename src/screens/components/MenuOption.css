@@ -37,3 +37,8 @@
         display: none !important;
     }
 }
+@media screen and (max-width: 400px) {
+    .menu_icon.MuiSvgIcon-root{
+        font-size: 1.7rem;
+    }
+}

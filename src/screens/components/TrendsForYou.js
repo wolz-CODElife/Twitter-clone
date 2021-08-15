@@ -32,7 +32,7 @@ const TrendsForYou = () => {
                 <h3>Trends for you</h3>
                 <SettingsOutlinedIcon />
             </div>
-            {trends.map(trend => <TrendOption  category={trend.category} title={trend.title} tweetCounts={trend.tweetCounts} />)}
+            {trends.map(trend => <TrendOption key={trend.title} category={trend.category} title={trend.title} tweetCounts={trend.tweetCounts} />)}
             <div className="trendsforyou_footer">
                 <a href="/">Show more</a>
             </div>
