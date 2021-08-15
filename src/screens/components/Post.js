@@ -1,11 +1,15 @@
 import React from 'react'
 import './Post.css'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import RepeatOutlinedIcon from '@material-ui/icons/RepeatOutlined';
+import ChatBubbleOutlineRoundedIcon from '@material-ui/icons/ChatBubbleOutlineRounded';
+import FavoriteBorderRoundedIcon from '@material-ui/icons/FavoriteBorderRounded';
+import ShareIcon from '@material-ui/icons/Share';
 
 const Post = () => {
     return (
         <div className="post">
-            <p className="retweet_tag">MrKind Retweeted</p>
+            <p className="retweet_tag"><RepeatOutlinedIcon style={{ transform: 'rotate(90deg)' }} /> MrKind Retweeted</p>
             <div className="post_item">
                 <img src="https://pbs.twimg.com/profile_images/1330972427711619075/sARDqsaa_normal.jpg" className="post_item_user_image" />
                 <div className="post_item_content">
@@ -34,10 +38,10 @@ const Post = () => {
                         </div>
                     </div>
                     <div className="post_item_footer">
-                        <span>8</span>
-                        <span>327</span>
-                        <span>506</span>
-                        <span>Share</span>
+                        <span><ChatBubbleOutlineRoundedIcon /> 8</span>
+                        <span><RepeatOutlinedIcon style={{ transform: 'rotate(90deg)' }} /> 327</span>
+                        <span><FavoriteBorderRoundedIcon /> 506</span>
+                        <span><ShareIcon /> </span>
                     </div>                    
                 </div>
             </div>
