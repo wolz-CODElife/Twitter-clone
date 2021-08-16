@@ -1,0 +1,24 @@
+.error{
+    height: 95vh;
+    display: grid;
+    place-items: center;
+}
+.error_back_button {
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white !important;
+    font-weight: 500;
+}
+.error_back_button > .MuisvgIcon-root {
+    font-size: 1.5rem;
+    color: white;
+}
+.error > img {
+    max-height: 75vh;
+}
+.error > a {
+    color: #1da1f2;
+    text-decoration: none;
+}

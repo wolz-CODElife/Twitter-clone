@@ -6,12 +6,14 @@ import GifOutlinedIcon from '@material-ui/icons/GifOutlined';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import SentimentSatisfiedOutlinedIcon from '@material-ui/icons/SentimentSatisfiedOutlined';
 import EventOutlinedIcon from '@material-ui/icons/EventOutlined';
+import useStateValue from '../../StateProvider';
 
 const NewPost = () => {
+    const [{user}, dispatch] = useStateValue()
     const [tweet, setTweet] = useState('')
     return (
         <div className="newpost">
-            <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" alt="Author" className="newpost_image" />
+            <img src={ user?.image } alt="Author" className="newpost_image" />
             <form className="newpost_form">
                 <textarea placeholder="What's happening?" onChange={(e) => setTweet(e.target.value)}></textarea>
                 <button><PublicIcon /> Everbody can reply</button>
