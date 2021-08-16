@@ -37,12 +37,22 @@ const Login = ({useHistory}) => {
                     email: result.user.email,
                     image: result.user.photoURL
                 }
-                db.collection('users').add(newGoogleUser)
-                localStorage.setItem('user', JSON.stringify(newGoogleUser))
-                dispatch({
-                    type: 'SET_USER',
-                    user: newGoogleUser
-                })
+                db.collection('users').where('email', '==', newGoogleUser.email).get()
+                    .then(users => {
+                        if (users.empty) {
+                            db.collection('users').add(newGoogleUser)
+                            localStorage.setItem('user', JSON.stringify(newGoogleUser))
+                            dispatch({
+                                type: 'SET_USER',
+                                user: newGoogleUser
+                            })
+                        }
+                        else {
+                            alert('Email already registered')
+                            return
+                        }
+                    }
+                )
             })
             .catch(error => console.log(error.message))
     }

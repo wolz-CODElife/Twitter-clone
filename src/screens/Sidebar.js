@@ -14,7 +14,8 @@ import PostAddIcon from '@material-ui/icons/PostAdd';
 import useStateValue from '../StateProvider';
 
 const Sidebar = () => {
-    const [{user}, dispatch] = useStateValue()
+    const [{ user }, dispatch] = useStateValue()
+    console.log(user)
     const logout = () => {
         localStorage.clear()
         if (user) dispatch({ type: 'SET_USER', user: null })
@@ -32,10 +33,10 @@ const Sidebar = () => {
             <MenuOption Icon={ExitToAppRoundedIcon} title="Logout" logout={logout} />
             <button type="button" className="sidebar_tweet_button"><PostAddIcon fontSize="large" className="tweet_icon" /><span className="menu_title">Tweet</span></button>
             <div className="sidebar_profile">
-                <img src="https://i.postimg.cc/3rmjkxMD/s-ARDqsaa-normal.jpg" alt="wolz-CODElife" className="sidebar_profile_image" />
+                <img src={ user?.image } alt={ user?.name } className="sidebar_profile_image" />
                 <div className="sidebar_profile_info">
-                    <h3>wolz-CODElife</h3>
-                    <p>@wolz-CODElife</p>
+                    <h3>{ user?.name }</h3>
+                    <p>@{ user?.name }</p>
                 </div>
             </div>
         </div>
