@@ -5,6 +5,13 @@
     padding-left: 50px;
     color: #0f1419;
 }
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #1da0f22c;
+    border-radius: 10px;
+}
 .sidebar > .MuiSvgIcon-root{
     margin: 0px;
     margin-top: 2px;
